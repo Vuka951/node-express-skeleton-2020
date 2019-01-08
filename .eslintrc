@@ -19,20 +19,14 @@
     "parser": "babel-eslint",
     "extends": [
       "eslint:recommended",
-      "plugin:react/recommended",
       "google"
     ],
     "rules": {
-      "react/jsx-filename-extension": 0,
-      "react/jsx-uses-vars": [
-        2
-      ],
       "import/no-extraneous-dependencies": 0,
       "max-len": 0,
       "require-jsdoc": 0,
       "valid-jsdoc": 0,
       "no-multi-str": 0,
-      "react/no-find-dom-node": 0,
       "no-console": 0,
       "indent": [
         "error",
