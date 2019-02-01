@@ -3,6 +3,7 @@ import rateLimit from 'express-rate-limit';
 import dotenv from 'dotenv';
 import cors from 'cors';
 import helmet from 'helmet';
+import bodyParser from 'body-parser';
 
 // Imported Routes
 import getEx from './routes/getEx';
@@ -12,6 +13,7 @@ import deleteEx from './routes/deleteEx';
 
 dotenv.config();
 const app = express();
+app.use(bodyParser.json());
 app.use(helmet());
 
 const whitelist = ['sitetowhitelit.com'];
