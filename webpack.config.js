@@ -1,15 +1,17 @@
 const path = require('path');
 const TerserPlugin = require('terser-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-const nodeExternals = require('webpack-node-externals');
 const Dotenv = require('dotenv-webpack');
 module.exports = {
   target: 'node',
   node: {
-    __dirname: false,
+    console: false,
+    global: false,
+    process: false,
+    Buffer: false,
     __filename: false,
+    __dirname: false,
   },
-  externals: [nodeExternals()],
   entry: {
     app: ['./src/index.js'],
   },
@@ -25,22 +27,14 @@ module.exports = {
         use: ['babel-loader'],
       },
     ]},
+  resolve: {
+    extensions: ['*', '.js', '.jsx'],
+  },
   plugins: [
     new CleanWebpackPlugin('build', {} ),
     new Dotenv(),
   ],
   optimization: {
-    splitChunks: {
-      cacheGroups: {
-        default: false,
-        vendors: false,
-        // vendors chunk
-        vendor: {
-          chunks: 'all',
-          test: /node_modules/,
-        },
-      },
-    },
     minimizer: [
       new TerserPlugin({
         cache: true,
