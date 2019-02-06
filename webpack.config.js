@@ -4,14 +4,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const Dotenv = require('dotenv-webpack');
 module.exports = {
   target: 'node',
-  node: {
-    console: false,
-    global: false,
-    process: false,
-    Buffer: false,
-    __filename: false,
-    __dirname: false,
-  },
+  node: false,
   entry: {
     app: ['./src/index.js'],
   },
