@@ -31,9 +31,9 @@
     "eslint": "^5.13.0",
     "eslint-config-google": "^0.11.0",
     "eslint-plugin-import": "^2.16.0",
-    "nodemon": "^1.18.9",
+    "nodemon": "^1.18.10",
     "terser-webpack-plugin": "^1.2.2",
-    "webpack": "^4.29.2",
+    "webpack": "^4.29.3",
     "webpack-cli": "^3.2.3",
     "webpack-node-externals": "^1.7.2"
   },
