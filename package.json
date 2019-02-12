@@ -43,7 +43,7 @@
     "dotenv": "^6.2.0",
     "express": "^4.16.4",
     "express-rate-limit": "^3.3.2",
-    "helmet": "^3.15.0",
+    "helmet": "^3.15.1",
     "loadash": "^1.0.0"
   }
 }

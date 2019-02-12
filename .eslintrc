@@ -27,7 +27,7 @@
       "require-jsdoc": 0,
       "valid-jsdoc": 0,
       "no-multi-str": 0,
-      "no-console": 0,
+      "no-console": 1,
       "indent": [
         "error",
         2
