@@ -4,8 +4,7 @@ import express from 'express';
 const router = express.Router();
 
 router.post('/', function(req, res) {
-  console.log(req.body);
-  res.send(req.body);
+  return res.send('POST response from /post');
 });
 
 export default router;

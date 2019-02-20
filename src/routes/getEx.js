@@ -4,7 +4,7 @@ import express from 'express';
 const router = express.Router();
 
 router.get('/', function(req, res) {
-  res.send('Birds home page');
+  return res.send('GET response from /get');
 });
 
 export default router;

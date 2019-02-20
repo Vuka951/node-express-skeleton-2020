@@ -4,7 +4,7 @@ import express from 'express';
 const router = express.Router();
 
 router.put('/', function(req, res) {
-  res.send('Got a PUT request at');
+  return res.send('PUT response from /PUT');
 });
 
 export default router;

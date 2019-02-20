@@ -4,7 +4,7 @@ import express from 'express';
 const router = express.Router();
 
 router.delete('/', function(req, res) {
-  res.send('Got a DELETE request at /user');
+  return res.send('DELETE response from /delete');
 });
 
 export default router;
