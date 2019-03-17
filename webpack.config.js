@@ -3,11 +3,10 @@ const TerserPlugin = require('terser-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const Dotenv = require('dotenv-webpack');
 module.exports = {
+  mode: 'production',
   target: 'node',
   node: false,
-  entry: {
-    app: ['./src/index.js'],
-  },
+  entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'build'),
     filename: 'server.js',
