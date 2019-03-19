@@ -18,6 +18,7 @@ dotenv.config();
 const app = express();
 // Middleware setup
 app.use(favicon(path.join(__dirname, '../public', 'favicon.ico')));
+app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 app.use(helmet());
 app.use(morgan('short'));
