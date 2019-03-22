@@ -6,6 +6,7 @@
   "scripts": {
     "start": "nodemon --exec babel-node -- src/index.js",
     "build": "webpack --mode production",
+    "babel-build": "babel src --out-dir babel-build",
     "lint": "eslint src"
   },
   "repository": {
