@@ -1,11 +1,13 @@
 # Node with Express app skeleton
-<h1>Uses:</h1>
-<ul>
-<li>nodemon</li>
-<li>express</li>
-</ul>
-<h1>To run:</h1>
-<ul>
-<li>npm install</li>
-<li>npm start</li>
-</ul>
+
+# Uses:
+
+*   nodemon
+*   express
+
+# To run:
+
+*   npm install
+*   npm start
+
+**Note:**The build functionality is experimental might not won't always work as properly.
