@@ -23,7 +23,7 @@ module.exports = {
     extensions: ['*', '.js', '.jsx'],
   },
   plugins: [
-    new CleanWebpackPlugin('build', {} ),
+    new CleanWebpackPlugin({}),
     new Dotenv(),
   ],
   optimization: {
