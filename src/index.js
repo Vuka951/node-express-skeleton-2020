@@ -51,6 +51,7 @@ app.use('/post', numberOfRequestsLimit, postEx);
 app.use('/put', numberOfRequestsLimit, putEx);
 app.use('/delete', numberOfRequestsLimit, deleteEx);
 
+// if the request is aborted half way or there are other issues this functions handles it so the app doesnt crash
 app.use(function(err, req, res, next) {
   if (err.status && err.status < 500) {
     return res.status(400).send('Request Aborted');
