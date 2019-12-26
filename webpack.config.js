@@ -6,7 +6,7 @@ module.exports = {
   mode: 'production',
   target: 'node',
   node: false,
-  entry: './src/index.js',
+  entry: './index.js',
   output: {
     path: path.resolve(__dirname, 'build'),
     filename: 'server.js',

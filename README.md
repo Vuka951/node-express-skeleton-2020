@@ -2,9 +2,8 @@
 
 # Uses:
 
-*   nodemon
 *   express
-*   babel-node so you can use 'import' etc.
+*   nodemon
 
 # To run:
 
