@@ -14,4 +14,4 @@
 
 * npm run build
 
-**Note:** The build functionality is experimental might not won't always work properly.
+**Note:** The build functionality is experimental might not won't always work properly.(especailly with native modules)
