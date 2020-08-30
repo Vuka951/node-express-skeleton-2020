@@ -34,7 +34,7 @@
     "terser-webpack-plugin": "^4.1.0",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
-    "webpack-node-externals": "^2.5.1"
+    "webpack-node-externals": "^2.5.2"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
